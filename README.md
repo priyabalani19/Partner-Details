@@ -7,7 +7,7 @@ The date you send in for the country should be the starting date of the two-day 
 API Docs and Example
 To get the list of partners, send an HTTP GET to:
 Here’s a sample request with 10 partners: 
-{
+```{
     "partners": [
         {
             "firstName": "Darin",
@@ -122,11 +122,11 @@ Here’s a sample request with 10 partners:
             ]
         }
     ]
-}
+}```
 
 
 For the list of partners above, the proper API response to send would look like this:
-{
+```{
     "countries": [
         {
             "attendeeCount": 1,
@@ -153,7 +153,7 @@ For the list of partners above, the proper API response to send would look like 
             "startDate": "2017-04-28"
         }
     ]
-}
+}```
 API Guidelines
 If your answer is correct, the API will return 200 OK. If the request is malformed or incorrect, the API will return 400 along with a message indicating if the response is of the wrong structure or incorrect.
 If you get a 5xx response, let us know and we’ll help you out.
